@@ -2,16 +2,18 @@ import React, { useEffect, useState } from 'react';
 import '../index.css';
 import axios from 'axios';
 
+const APIKEY = process.env.REACT_APP_APIKEY;
+
 const CharacterCard = ({searchVal}) => {
 
     const characterURL = 'https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=';
 
-    const credentials = '&ts=1&apikey=6871af630ca51742153d2db8dbf10dcb&hash=609bb5211dbf0e54c53e927bb92f5ee7';
+    // const credentials = '&ts=1&apikey=6871af630ca51742153d2db8dbf10dcb&hash=609bb5211dbf0e54c53e927bb92f5ee7';
 
     const [characterData, setCharacterData] = useState([]);
 
     useEffect(() => {
-        axios.get(characterURL + searchVal + credentials).then((response) => {
+        axios.get(characterURL + searchVal + APIKEY).then((response) => {
             console.log(response.data.data.results)
             setCharacterData(response.data.data.results);
         })
