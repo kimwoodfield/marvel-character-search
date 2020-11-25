@@ -5,6 +5,9 @@ Marvel Character Search is a frontend web application that draws its data from t
 **Technologies used -**
 HTML, CSS, JavaScript / React.js
 
+**URL -**
+https://kimwoodfield.github.io/marvelapp-character-search/
+
 **Screenshots -**
 ![](./screenshots/marvel-landing-page.png)
 ![](./screenshots/marvel-character-search.png)
