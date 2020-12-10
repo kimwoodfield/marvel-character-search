@@ -1,5 +1,5 @@
 {
-  "name": "iss4-marvel-webapp",
+  "name": "marvel-character-search",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

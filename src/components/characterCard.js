@@ -8,8 +8,6 @@ const CharacterCard = ({searchVal}) => {
 
     const characterURL = 'https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=';
 
-    // const credentials = '&ts=1&apikey=6871af630ca51742153d2db8dbf10dcb&hash=609bb5211dbf0e54c53e927bb92f5ee7';
-
     const [characterData, setCharacterData] = useState([]);
 
     useEffect(() => {
